@@ -27,7 +27,7 @@
     <artifactId>pinot-segment-uploader</artifactId>
     <groupId>org.apache.pinot</groupId>
     <version>1.2.0-SNAPSHOT</version>
-    <relativePath>..</relativePath>
+
   </parent>
 
   <artifactId>pinot-segment-uploader-default</artifactId>
@@ -37,17 +37,4 @@
     <pinot.root>${basedir}/../../..</pinot.root>
     <phase.prop>none</phase.prop>
   </properties>
-
-  <dependencies>
-    <dependency>
-      <groupId>org.apache.pinot</groupId>
-      <artifactId>pinot-common</artifactId>
-      <version>${project.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>org.apache.pinot</groupId>
-      <artifactId>pinot-core</artifactId>
-      <version>${project.version}</version>
-    </dependency>
-  </dependencies>
 </project>
