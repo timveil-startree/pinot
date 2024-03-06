@@ -256,6 +256,7 @@
     <chronicle-core.version>2.24ea16</chronicle-core.version>
     <asm.version>9.3</asm.version>
     <jna.version>5.5.0</jna.version>
+    <jbcrypt.version>0.4</jbcrypt.version>
   </properties>
 
   <profiles>
@@ -1495,6 +1496,12 @@
         <groupId>io.github.hakky54</groupId>
         <artifactId>sslcontext-kickstart-for-netty</artifactId>
         <version>${sslcontext.kickstart.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.mindrot</groupId>
+        <artifactId>jbcrypt</artifactId>
+        <version>${jbcrypt.version}</version>
       </dependency>
 
     </dependencies>
