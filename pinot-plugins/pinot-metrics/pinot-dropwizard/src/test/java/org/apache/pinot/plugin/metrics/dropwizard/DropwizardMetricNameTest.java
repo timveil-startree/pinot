@@ -16,38 +16,16 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package org.apache.pinot.spi.plugin;
 
-import java.util.Objects;
+package org.apache.pinot.plugin.metrics.dropwizard;
+
+import nl.jqno.equalsverifier.EqualsVerifier;
+import org.testng.annotations.Test;
 
 
-public final class Plugin {
-
-  final String _name;
-
-  public Plugin(String name) {
-    _name = name;
-  }
-
-  @Override
-  public boolean equals(Object o) {
-    if (this == o) {
-      return true;
-    }
-    if (o == null || getClass() != o.getClass()) {
-      return false;
-    }
-    Plugin plugin = (Plugin) o;
-    return Objects.equals(_name, plugin._name);
-  }
-
-  @Override
-  public int hashCode() {
-    return Objects.hash(_name);
-  }
-
-  @Override
-  public String toString() {
-    return _name;
+public class DropwizardMetricNameTest {
+  @Test
+  public void testEqualsContract() {
+    EqualsVerifier.forClass(DropwizardMetricName.class).verify();
   }
 }
