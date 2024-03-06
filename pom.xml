@@ -111,7 +111,6 @@
     <build.profile.id>dev</build.profile.id>
     <jdk.version>11</jdk.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-
     <!-- Only unit tests are run by default. -->
     <skip.integration.tests>true</skip.integration.tests>
     <skip.unit.tests>false</skip.unit.tests>
@@ -122,6 +121,60 @@
       See also: the surefire plugin section and the profiles section.-->
     <SKIP_INTEGRATION_TESTS>true</SKIP_INTEGRATION_TESTS>
     <!-- Configuration for unit/integration tests section 1 of 3 (properties) ENDS HERE.-->
+    <avro.version>1.11.3</avro.version>
+    <parquet.version>1.13.1</parquet.version>
+    <helix.version>1.3.1</helix.version>
+    <zkclient.version>0.7</zkclient.version>
+    <jackson.version>2.12.7.20221012</jackson.version>
+    <zookeeper.version>3.7.2</zookeeper.version>
+    <async-http-client.version>2.12.3</async-http-client.version>
+    <jersey.version>2.39</jersey.version>
+    <grizzly.version>2.4.4</grizzly.version>
+    <hk2.version>2.6.1</hk2.version>
+    <swagger.version>1.6.9</swagger.version>
+    <hadoop.version>3.3.6</hadoop.version>
+    <antlr.version>4.6</antlr.version>
+    <jsonpath.version>2.9.0</jsonpath.version>
+    <jsonsmart.version>2.5.0</jsonsmart.version>
+    <quartz.version>2.3.2</quartz.version>
+    <calcite.version>1.30.0</calcite.version>
+    <lucene.version>9.8.0</lucene.version>
+    <reflections.version>0.9.11</reflections.version>
+    <!-- commons-configuration, hadoop-common, hadoop-client use commons-lang -->
+    <commons-lang.version>2.6</commons-lang.version>
+    <!-- hadoop-common, spark-core use commons-net -->
+    <commons-net.version>3.10.0</commons-net.version>
+    <!-- helix-core, spark-core use libraries from io.dropwizard.metrics -->
+    <dropwizard-metrics.version>4.2.23</dropwizard-metrics.version>
+    <snappy-java.version>1.1.10.4</snappy-java.version>
+    <zstd-jni.version>1.5.5-11</zstd-jni.version>
+    <lz4-java.version>1.8.0</lz4-java.version>
+    <log4j.version>2.22.0</log4j.version>
+    <slf4j.version>2.0.9</slf4j.version>
+    <netty.version>4.1.107.Final</netty.version>
+    <reactivestreams.version>1.0.4</reactivestreams.version>
+    <jts.version>1.19.0</jts.version>
+    <h3.version>4.1.1</h3.version>
+    <jmh.version>1.26</jmh.version>
+    <audienceannotations.version>0.15.0</audienceannotations.version>
+    <clp-ffi.version>0.4.4</clp-ffi.version>
+    <stax2-api.version>4.1</stax2-api.version>
+    <aws.sdk.version>2.25.3</aws.sdk.version>
+    <joda-time.version>2.12.5</joda-time.version>
+    <testng.version>7.9.0</testng.version>
+    <woodstox.version>6.4.0</woodstox.version>
+    <sslcontext.kickstart.version>8.2.0</sslcontext.kickstart.version>
+
+    <!-- Google Libraries -->
+    <google.cloud.libraries.version>26.32.0</google.cloud.libraries.version>
+    <google.auth.version>1.23.0</google.auth.version>
+    <gson.version>2.10.1</gson.version>
+    <guava.version>33.0.0-jre</guava.version>
+    <google.http-client.version>1.44.1</google.http-client.version>
+    <protobuf.version>3.25.2</protobuf.version>
+    <grpc.version>1.61.1</grpc.version>
+
+    <confluent.version>7.2.6</confluent.version>
 
     <!-- Sets the VM argument line used when unit tests are run. -->
     <argLine>-Xms4g -Xmx4g</argLine>
@@ -140,112 +193,69 @@
     <scala.version>2.12.18</scala.version>
     <scala.compat.version>2.12</scala.compat.version>
 
-
-    <activation.version>1.1.1</activation.version>
-    <antlr.version>4.6</antlr.version>
-    <asm.version>9.3</asm.version>
-    <async-http-client.version>2.12.3</async-http-client.version>
-    <audienceannotations.version>0.15.0</audienceannotations.version>
-    <auto-service.version>1.1.1</auto-service.version>
-    <avro.version>1.11.3</avro.version>
-    <aws.sdk.version>2.20.137</aws.sdk.version>
-    <calcite.version>1.30.0</calcite.version>
-    <checker-qual.version>3.42.0</checker-qual.version>
-    <chronicle-core.version>2.24ea16</chronicle-core.version>
-    <clp-ffi.version>0.4.4</clp-ffi.version>
-    <commons-beanutils.version>1.9.4</commons-beanutils.version>
-    <commons-cli.version>1.6.0</commons-cli.version>
-    <commons-codec.version>1.16.0</commons-codec.version>
-    <commons-collections.version>3.2.2</commons-collections.version>
-    <commons-compress.version>1.26.0</commons-compress.version>
-    <commons-configuration2.version>2.9.0</commons-configuration2.version>
-    <commons-csv.version>1.10.0</commons-csv.version>
-    <commons-io.version>2.11.0</commons-io.version>
-    <commons-lang.version>2.6</commons-lang.version>
-    <commons-lang3.version>3.12.0</commons-lang3.version>
-    <commons-math.version>2.1</commons-math.version>
-    <commons-math3.version>3.2</commons-math3.version>
-    <commons-net.version>3.10.0</commons-net.version>
-    <confluent.version>7.2.6</confluent.version>
-    <datasketches-java.version>5.0.0</datasketches-java.version>
-    <disruptor.version>3.3.4</disruptor.version>
-    <dropwizard-metrics.version>4.2.23</dropwizard-metrics.version>
-    <equalsverifier.version>3.15.8</equalsverifier.version>
-    <error_prone_annotations.version>2.25.0</error_prone_annotations.version>
-    <fastutil.version>8.2.3</fastutil.version>
     <flink.version>1.14.6</flink.version>
-    <google-api-services-storage.version>v1-rev20240209-2.0.0</google-api-services-storage.version>
-    <google.auth.version>1.23.0</google.auth.version>
-    <google.cloud.libraries.version>26.32.0</google.cloud.libraries.version>
-    <google.http-client.version>1.44.1</google.http-client.version>
-    <grizzly.version>2.4.4</grizzly.version>
+    <commons-configuration2.version>2.9.0</commons-configuration2.version>
+
+    <kotlin.stdlib.version>1.9.22</kotlin.stdlib.version>
+    <okio.version>3.8.0</okio.version>
+    <kerby.version>2.0.3</kerby.version>
+    <jline.version>3.22.0</jline.version>
+    <wildfly.version>1.5.4.Final</wildfly.version>
+    <jettison.version>1.4.0</jettison.version>
+    <equalsverifier.version>3.15.8</equalsverifier.version>
+    <checker-qual.version>3.42.0</checker-qual.version>
     <groovy-all.version>2.4.21</groovy-all.version>
-    <grpc.version>1.61.1</grpc.version>
-    <gson.version>2.10.1</gson.version>
-    <guava.version>33.0.0-jre</guava.version>
-    <h2.version>2.2.220</h2.version>
-    <h3.version>4.1.1</h3.version>
-    <hadoop.version>3.2.4</hadoop.version>
-    <hash4j.version>0.13.0</hash4j.version>
-    <helix.version>1.3.1</helix.version>
-    <hk2.version>2.6.1</hk2.version>
-    <httpclient.version>4.5.14</httpclient.version>
-    <httpcore.version>4.4.13</httpcore.version>
-    <httpmime.version>4.5.13</httpmime.version>
-    <ipaddress.version>5.3.4</ipaddress.version>
-    <j2objc-annotations.version>2.8</j2objc-annotations.version>
-    <jackson.version>2.12.7.20221012</jackson.version>
-    <javassist.version>3.19.0-GA</javassist.version>
+    <xml-apis.version>2.0.2</xml-apis.version>
+    <RoaringBitmap.version>0.9.38</RoaringBitmap.version>
+    <commons-cli.version>1.6.0</commons-cli.version>
+    <commons-lang3.version>3.12.0</commons-lang3.version>
+    <commons-collections.version>3.2.2</commons-collections.version>
+    <commons-io.version>2.11.0</commons-io.version>
+    <http.mime.version>4.5.13</http.mime.version>
+    <http.client.version>4.5.14</http.client.version>
+    <http.core.version>4.4.13</http.core.version>
+    <fastutil.version>8.2.3</fastutil.version>
+    <commons-compress.version>1.26.0</commons-compress.version>
+    <libthrift.version>0.15.0</libthrift.version>
     <javax.servlet-api.version>3.0.1</javax.servlet-api.version>
     <javax.ws.rs-api.version>2.0.1</javax.ws.rs-api.version>
-    <jcabi-log.version>0.24.1</jcabi-log.version>
-    <jersey.version>2.39</jersey.version>
-    <jmh.version>1.26</jmh.version>
-    <jna.version>5.5.0</jna.version>
-    <jnr-constants.version>0.10.3</jnr-constants.version>
-    <jnr-posix.version>3.1.15</jnr-posix.version>
-    <joda-time.version>2.12.5</joda-time.version>
-    <jopt-simple.version>4.6</jopt-simple.version>
-    <jsonpath.version>2.9.0</jsonpath.version>
-    <jsonsmart.version>2.5.0</jsonsmart.version>
-    <jsr305.version>3.0.2</jsr305.version>
-    <jts.version>1.19.0</jts.version>
-    <kotlin.stdlib.version>1.7.22</kotlin.stdlib.version>
-    <larray-mmap.version>0.4.1</larray-mmap.version>
-    <libthrift.version>0.15.0</libthrift.version>
-    <log4j.version>2.22.0</log4j.version>
-    <lucene.version>9.8.0</lucene.version>
-    <lz4-java.version>1.8.0</lz4-java.version>
-    <mockito-core.version>5.11.0</mockito-core.version>
-    <netty.version>4.1.107.Final</netty.version>
-    <orc.version>1.5.9</orc.version>
-    <paranamer.version>2.8</paranamer.version>
-    <parquet.version>1.13.1</parquet.version>
-    <picocli.version>4.6.1</picocli.version>
-    <posix.version>2.23.2</posix.version>
-    <protobuf.version>3.25.2</protobuf.version>
-    <quartz.version>2.3.2</quartz.version>
-    <reactivestreams.version>1.0.4</reactivestreams.version>
-    <reflections.version>0.9.11</reflections.version>
-    <RoaringBitmap.version>0.9.38</RoaringBitmap.version>
-    <slf4j.version>2.0.9</slf4j.version>
+    <activation.version>1.1.1</activation.version>
+    <disruptor.version>3.3.4</disruptor.version>
     <snakeyaml.version>2.2</snakeyaml.version>
-    <snappy-java.version>1.1.10.4</snappy-java.version>
-    <sslcontext.kickstart.version>8.2.0</sslcontext.kickstart.version>
-    <stax2-api.version>4.1</stax2-api.version>
-    <stream.version>2.7.0</stream.version>
+    <larray-mmap.version>0.4.1</larray-mmap.version>
+    <commons-beanutils.version>1.9.4</commons-beanutils.version>
+    <commons-codec.version>1.16.0</commons-codec.version>
+    <paranamer.version>2.8</paranamer.version>
+    <google-api-services-storage.version>v1-rev20240209-2.0.0</google-api-services-storage.version>
+    <error_prone_annotations.version>2.25.0</error_prone_annotations.version>
+    <auto-service.version>1.1.1</auto-service.version>
+    <jsr305.version>3.0.2</jsr305.version>
+    <j2objc-annotations.version>2.8</j2objc-annotations.version>
+    <reload4j.version>1.2.25</reload4j.version>
+    <jaxb-api.version>2.3.1</jaxb-api.version>
+    <orc.version>1.5.9</orc.version>
     <swagger-ui.version>5.1.0</swagger-ui.version>
-    <swagger.version>1.6.9</swagger.version>
+    <stream.version>2.7.0</stream.version>
+    <datasketches-java.version>5.0.0</datasketches-java.version>
+    <hash4j.version>0.13.0</hash4j.version>
     <t-digest.version>3.2</t-digest.version>
-    <testng.version>7.9.0</testng.version>
+    <jcabi-log.version>0.24.1</jcabi-log.version>
+    <javassist.version>3.19.0-GA</javassist.version>
+    <commons-math.version>2.1</commons-math.version>
+    <mockito-core.version>5.11.0</mockito-core.version>
+    <commons-csv.version>1.10.0</commons-csv.version>
+    <h2.version>2.2.224</h2.version>
+    <jnr-posix.version>3.1.15</jnr-posix.version>
+    <jnr-constants.version>0.10.3</jnr-constants.version>
+    <picocli.version>4.6.1</picocli.version>
     <tyrus-standalone-client.version>2.1.4</tyrus-standalone-client.version>
-    <validation-api.version>2.0.1.Final</validation-api.version>
-    <woodstox.version>6.4.0</woodstox.version>
-    <xml-apis.version>2.0.2</xml-apis.version>
-    <zkclient.version>0.7</zkclient.version>
-    <zookeeper.version>3.7.2</zookeeper.version>
-    <zstd-jni.version>1.5.5-11</zstd-jni.version>
-
+    <commons-math3.version>3.2</commons-math3.version>
+    <jopt-simple.version>4.6</jopt-simple.version>
+    <ipaddress.version>5.3.4</ipaddress.version>
+    <posix.version>2.23.2</posix.version>
+    <chronicle-core.version>2.24ea16</chronicle-core.version>
+    <asm.version>9.3</asm.version>
+    <jna.version>5.5.0</jna.version>
   </properties>
 
   <profiles>
@@ -508,12 +518,12 @@
       <dependency>
         <groupId>org.apache.httpcomponents</groupId>
         <artifactId>httpmime</artifactId>
-        <version>${httpmime.version}</version>
+        <version>${http.mime.version}</version>
       </dependency>
       <dependency>
         <groupId>org.apache.httpcomponents</groupId>
         <artifactId>httpclient</artifactId>
-        <version>${httpclient.version}</version>
+        <version>${http.client.version}</version>
         <exclusions>
           <exclusion>
             <groupId>commons-logging</groupId>
@@ -524,7 +534,7 @@
       <dependency>
         <groupId>org.apache.httpcomponents</groupId>
         <artifactId>httpcore</artifactId>
-        <version>${httpcore.version}</version>
+        <version>${http.core.version}</version>
       </dependency>
 
       <!-- netty BOM -->
@@ -610,7 +620,7 @@
       <dependency>
         <groupId>javax.validation</groupId>
         <artifactId>validation-api</artifactId>
-        <version>${validation-api.version}</version>
+        <version>2.0.1.Final</version>
       </dependency>
       <dependency>
         <groupId>javax.activation</groupId>
@@ -899,6 +909,10 @@
             <groupId>commons-logging</groupId>
             <artifactId>commons-logging</artifactId>
           </exclusion>
+          <exclusion>
+            <groupId>io.netty</groupId>
+            <artifactId>netty</artifactId>
+          </exclusion>
         </exclusions>
       </dependency>
       <dependency>
@@ -948,10 +962,6 @@
         <scope>provided</scope>
         <exclusions>
           <exclusion>
-            <groupId>javax.xml.bind</groupId>
-            <artifactId>jaxb-api</artifactId>
-          </exclusion>
-          <exclusion>
             <groupId>org.codehaus.jackson</groupId>
             <artifactId>jackson-core-asl</artifactId>
           </exclusion>
@@ -983,6 +993,10 @@
             <groupId>commons-logging</groupId>
             <artifactId>commons-logging</artifactId>
           </exclusion>
+          <exclusion>
+            <groupId>io.netty</groupId>
+            <artifactId>netty</artifactId>
+          </exclusion>
         </exclusions>
       </dependency>
       <dependency>
@@ -990,6 +1004,43 @@
         <artifactId>hadoop-hdfs-client</artifactId>
         <version>${hadoop.version}</version>
         <scope>provided</scope>
+      </dependency>
+      <!-- Solve the dependency converge issue within hadoop libraries -->
+      <dependency>
+        <groupId>ch.qos.reload4j</groupId>
+        <artifactId>reload4j</artifactId>
+        <version>${reload4j.version}</version>
+      </dependency>
+      <!-- Solve the dependency converge issue between hadoop-common and orc-core -->
+      <dependency>
+        <groupId>javax.xml.bind</groupId>
+        <artifactId>jaxb-api</artifactId>
+        <version>${jaxb-api.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.kerby</groupId>
+        <artifactId>kerb-core</artifactId>
+        <version>${kerby.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.kerby</groupId>
+        <artifactId>kerb-simplekdc</artifactId>
+        <version>${kerby.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jline</groupId>
+        <artifactId>jline</artifactId>
+        <version>${jline.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.wildfly.common</groupId>
+        <artifactId>wildfly-common</artifactId>
+        <version>${wildfly.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.codehaus.jettison</groupId>
+        <artifactId>jettison</artifactId>
+        <version>${jettison.version}</version>
       </dependency>
 
       <!-- Metrics -->
@@ -1395,6 +1446,21 @@
         <groupId>org.jetbrains.kotlin</groupId>
         <artifactId>kotlin-stdlib</artifactId>
         <version>${kotlin.stdlib.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jetbrains.kotlin</groupId>
+        <artifactId>kotlin-stdlib-common</artifactId>
+        <version>${kotlin.stdlib.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.squareup.okio</groupId>
+        <artifactId>okio</artifactId>
+        <version>${okio.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.squareup.okio</groupId>
+        <artifactId>okio-jvm</artifactId>
+        <version>${okio.version}</version>
       </dependency>
       <dependency>
         <groupId>com.fasterxml.woodstox</groupId>
