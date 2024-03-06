@@ -170,7 +170,7 @@
     <datasketches-java.version>5.0.0</datasketches-java.version>
     <disruptor.version>3.3.4</disruptor.version>
     <dropwizard-metrics.version>4.2.23</dropwizard-metrics.version>
-    <equalsverifier.version>3.14.1</equalsverifier.version>
+    <equalsverifier.version>3.15.8</equalsverifier.version>
     <error_prone_annotations.version>2.25.0</error_prone_annotations.version>
     <fastutil.version>8.2.3</fastutil.version>
     <flink.version>1.14.6</flink.version>
@@ -727,6 +727,12 @@
         <groupId>commons-beanutils</groupId>
         <artifactId>commons-beanutils</artifactId>
         <version>${commons-beanutils.version}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
       <dependency>
         <groupId>commons-codec</groupId>
@@ -1672,6 +1678,7 @@
             <target>${jdk.version}</target>
             <fork>true</fork>
             <encoding>${project.build.sourceEncoding}</encoding>
+            <proc>none</proc>
           </configuration>
         </plugin>
         <plugin>
@@ -2169,6 +2176,7 @@
               <artifact>*:*</artifact>
               <excludes>
                 <exclude>module-info.class</exclude>
+                <exclude>META-INF/versions/**/*</exclude>
                 <exclude>META-INF/*.SF</exclude>
                 <exclude>META-INF/*.DSA</exclude>
                 <exclude>META-INF/*.RSA</exclude>
